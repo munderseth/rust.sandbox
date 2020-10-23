@@ -22,7 +22,7 @@ Trying out some basic stuff:
 ## References
 
 - Testspace: https://munderseth.testspace.com/projects/munderseth:rust.sandbox
-- GitHub Pages: https://munderseth.github.io/sandbox.rust/
+- GitHub Pages: https://munderseth.github.io/rust.sandbox/
    - using a redirect to the sub-folder called `hello_rust`
 - There are two GitHub workflows
    - CI for running tests, publishing
