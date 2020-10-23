@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 50
+      - uses: testspace-com/setup-testspace@v1
+        with:
+          domain: ${{ github.repository_owner }}
+          token: ${{ secrets.TESTSPACE_TOKEN }}    
+      - name: Installation 
+        run: cargo install cargo2junit
+      - name: build
+        run: cargo build
+      - name: test
+        run: cargo test -- -Z unstable-options --format json | cargo2junit > results.xml 
+      - name: Push result to Testspace server
+        run: |
+          testspace results.xml
+        if: always()
