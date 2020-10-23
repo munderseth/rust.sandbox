@@ -21,7 +21,7 @@ Trying out some basic stuff:
 
 ## References
 
-- Testspace: munderseth.testspace.com/projects/munderseth:rust.sandbox
+- Testspace: https://munderseth.testspace.com/projects/munderseth:rust.sandbox
 - GitHub Pages: https://munderseth.github.io/sandbox.rust/
    - using a redirect to the sub-folder called `hello_rust`
 - There are two GitHub workflows
