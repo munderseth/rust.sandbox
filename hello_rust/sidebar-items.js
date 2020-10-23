@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["main",""]]});
+initSidebarItems({"fn":[["foo","foo is a function"],["greeting","greeting is a function that was copied from Learn Rust"]]});
